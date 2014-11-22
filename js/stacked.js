@@ -68,34 +68,9 @@ var stacked = function() {
 			})
 			.attr("height", x_scale.rangeBand());
 
-		// var stack_svg = d3.select("#stacked")
-		// 	.append("svg")
-		// 	.attr("width", st_width)
-		// 	.attr("height", st_height);
-
-		// var groups = stack_svg.selectAll('g')
-		// 	.data(data)
-		// 	.enter()
-		// 	.append('g')
-		// 	.style("fill", function(d,i){
-		// 		return colors(i);
-		// 	});
-
-		// var rects = groups.selectAll("rect")
-		// 	.data(function(d){return d.y})
-		// 	.enter()
-		// 	.append("rect")
-		// 	.attr('x', function(d){
-		// 		return rating_scale(d.x);
-		// 	})
-		// 	.attr('y', function(d){
-		// 		return y_scale(d.y);
-		// 	})
-		// 	.attr('height', function(d){ return y_scale(d.y)})
-		// 	.attr('width', function(d){return rating_scale(d.x)});
 		 svg.append("g")
         .attr("class", "axis")
-        .attr("transform", "translate(" + 80 + ", -20)")
+        .attr("transform", "translate(" + 100 + ", 0)")
         .call(xAxis);
 
 	}); 

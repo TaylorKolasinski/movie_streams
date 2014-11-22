@@ -1,8 +1,12 @@
 <html>
 	<head>
 		<script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+		<script src="http://d3js.org/topojson.v0.min.js"></script>
+		<link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic' rel='stylesheet' type='text/css'>
+		<link href='styles/style.css' rel='stylesheet' type='text/css'>
 	</head>
 	<body>
+		<div id="map"></div>
 		<div id="imdb_ranking"></div>
 		<div id="year"></div>
 		<button id='duration'>Duration</button>
@@ -13,7 +17,11 @@
 		<div id="bars"></div>
 
 		<div id="stacked"></div>
+		
+
 		<script type="text/javascript" src="js/imdb_ranking_scatter.js"></script>
+		<script type="text/javascript" src="js/map.js"></script>
+
 		<script type="text/javascript" src="js/bars.js"></script>
 		<script type="text/javascript" src="js/stacked.js"></script>
 		<script type="text/javascript" src="js/scatter.js"></script>
@@ -22,38 +30,10 @@
 			// yearScatter();
 			// rankingScatter();
 			// movieLengthScatter();
+			map();
 			scatter();
 			bars();
 			stacked();
-			
 		</script>
-		<style type="text/css">
-			.axis path {
-				fill: none;
-				stroke: black;
-			}
-			.axis {
-				font-size: 8pt;
-				font-family: sans-serif;
-			}
-			.tick {
-				fill: none;
-				stroke: black;
-			}
-			circle {
-				stroke: black;
-				stroke-width: 0.5px;
-				fill: RoyalBlue;
-				opacity: 0.6;
-			}
-			.tooltip {
-			  position: fixed;
-			  width: 300px;
-			  height: 28px;
-			  pointer-events: none;
-			  top: 50px;
-			  left: 500px;
-			}
-		</style>
 	</body>
 </html>
