@@ -6,17 +6,32 @@
 		<link href='styles/style.css' rel='stylesheet' type='text/css'>
 	</head>
 	<body>
-		<div id="map"></div>
-		<div id="imdb_ranking"></div>
-		<div id="year"></div>
-		<button id='duration'>Duration</button>
-		<button id='yearsbutton'>Years</button>
+		<div class="container">
+			<div class="headerContainer">
+				<header>IMDB Top 250 Online Streaming</header>
+				<div class="subtitle">A look at the online streaming habits of the IMDB Top 250 movies on Primewire</div>
+			</div>
+			<div class="analysis">
+				<h3>Overview</h3>
+				<p>The goal of this project was to gain more insight to the poppularity and the usage of sites like Primewire and the sites that PW links to. For those unfamilar, Primewire is a link aggreator that collects links to thrid party sites that host movies and tv shows.</p>
+				<p>I wanted to look at a few characteristics of the users of the site, and see if there was any paterns in what types of movies are streamed. The IMDB Top 250 was used as a decent proxy for the wide range of movies available to stream online.</p>
+			</div>
+			<div class="analysis">
+				<h3>Data</h3>
+				<p>To do: provide explanations on data collected and how. With sources, links and links to scrapers</p>
+			</div>
+			<div id="map"></div>
+			<div id="imdb_ranking"></div>
+			<div id="year"></div>
+			<button id='duration'>Duration</button>
+			<button id='yearsbutton'>Years</button>
 
-		<div id="scatter"></div>
-		<button id='host_sites'>Hosts</button>
-		<div id="bars"></div>
+			<div id="scatter"></div>
+			<button id='host_sites'>Hosts</button>
+			<div id="bars"></div>
 
-		<div id="stacked"></div>
+			<div id="stacked"></div>
+		</div>
 		
 
 		<script type="text/javascript" src="js/imdb_ranking_scatter.js"></script>
